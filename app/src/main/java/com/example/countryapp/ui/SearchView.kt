@@ -22,10 +22,8 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.countryapp.ui.model.Country
 import com.example.countryapp.R
-import com.example.countryapp.ui.model.Currency
 import com.example.countryapp.ui.theme.Shapes
 import com.example.countryapp.ui.theme.turquoise
-import com.example.countryapp.ui.theme.*
 import com.example.countryapp.ui.viewmodel.CountrySearchViewModel
 
 @Composable
