@@ -22,7 +22,7 @@ data class CountryItem(
     val latlng: List<Double>,
     val name: Name,
     val population: Int,
-    val region: String,
+    val region: Int,
     val startOfWeek: String,
     val status: String,
     val subregion: String,
