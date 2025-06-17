@@ -3,7 +3,7 @@ package com.example.countryapp.ui.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.countryapp.data.CountryRepository
-import com.example.countryapp.ui.model.Country
+import com.example.countryapp.data.model.Country
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import javax.inject.Inject

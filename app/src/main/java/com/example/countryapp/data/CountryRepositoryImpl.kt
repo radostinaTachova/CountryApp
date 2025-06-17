@@ -1,7 +1,6 @@
 package com.example.countryapp.data
 
-import com.example.countryapp.toCountry
-import com.example.countryapp.ui.model.Country
+import com.example.countryapp.data.model.Country
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Singleton

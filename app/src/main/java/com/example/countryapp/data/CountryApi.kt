@@ -1,12 +1,12 @@
 package com.example.countryapp.data
 
+import com.example.countryapp.data.apiModel.CountryItem
 import com.google.gson.GsonBuilder
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
-import retrofit2.http.Query
 
 interface CountryApi {
 

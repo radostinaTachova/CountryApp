@@ -16,7 +16,6 @@ class NetworkModule {
         return CountryApi.create()
     }
 
-
     @Singleton
     @Provides
     fun provideCountryRepository(api: CountryApi): CountryRepository {

@@ -1,8 +1,8 @@
-package com.example.countryapp
+package com.example.countryapp.data
 
-import com.example.countryapp.data.CountryItem
-import com.example.countryapp.ui.model.Country
-import com.example.countryapp.ui.model.Currency
+import com.example.countryapp.data.apiModel.CountryItem
+import com.example.countryapp.data.model.Country
+import com.example.countryapp.data.model.Currency
 
 fun CountryItem.toCountry(): Country {
     return Country(name = this.name.common,
@@ -14,7 +14,6 @@ fun CountryItem.toCountry(): Country {
                     currencies = this.currencies?.map { Currency(it.value.name, it.value.symbol) },
                     languages = this.languages?.map { it.value })
 }
-
 
 
 fun Country.getCurrenciesString(): String {

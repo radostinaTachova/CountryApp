@@ -37,6 +37,7 @@ fun MyCountryApp() {
                 modifier = Modifier.padding(it)
             ) {
                 composable(route = Search.route) {
+
                     SearchBarScreen() { name ->
                         navController.navigate("${Details.route}/$name")
                     }

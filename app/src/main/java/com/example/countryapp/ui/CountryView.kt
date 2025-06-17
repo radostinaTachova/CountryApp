@@ -17,9 +17,9 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import com.example.countryapp.R
-import com.example.countryapp.getCurrenciesString
-import com.example.countryapp.ui.model.Country
-import com.example.countryapp.ui.model.Currency
+import com.example.countryapp.data.getCurrenciesString
+import com.example.countryapp.data.model.Country
+import com.example.countryapp.data.model.Currency
 import com.example.countryapp.ui.theme.CountryAppTheme
 import com.example.countryapp.ui.theme.lightTurquoise
 import com.example.countryapp.ui.viewmodel.CountryDetailViewModel
