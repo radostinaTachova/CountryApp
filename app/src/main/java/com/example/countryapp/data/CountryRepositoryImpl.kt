@@ -11,15 +11,6 @@ import javax.inject.Inject
 class CountryRepositoryImpl @Inject constructor(private val countryApi: CountryApi) : CountryRepository {
 
 
-    companion object {
-        @Volatile private var instance: CountryRepository? = null
-
-        fun getInstance(countryApi: CountryApi) =
-            instance ?: synchronized(this) {
-                instance ?: CountryRepositoryImpl(countryApi).also { instance = it }
-            }
-    }
-
     override suspend fun getCountries(name: String): List<Country> {
         return withContext(Dispatchers.IO) {
             val response = countryApi.getCountries(name)

@@ -19,6 +19,6 @@ class NetworkModule {
     @Singleton
     @Provides
     fun provideCountryRepository(api: CountryApi): CountryRepository {
-        return CountryRepositoryImpl.getInstance(api)
+        return CountryRepositoryImpl(api)
     }
 }
